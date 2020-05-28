@@ -7,7 +7,8 @@
     "clean": "npx shx rm -rf build",
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "postinstall": "check-plugin && check-peer-dependencies || true"
+    "postinstall": "check-plugin && check-peer-dependencies || true",
+    "test": "jest"
   },
   "dependencies": {
     "@spinnaker/core": "0.0.471",
@@ -27,18 +28,21 @@
     "@rollup/plugin-node-resolve": "7.1.1",
     "@rollup/plugin-typescript": "4.0.0",
     "@spinnaker/eslint-plugin": "1.0.7",
+    "@types/jest": "^25.2.3",
     "@types/react": "16.8.25",
     "@typescript-eslint/eslint-plugin": "2.26.0",
     "@typescript-eslint/parser": "2.26.0",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.1",
     "eslint-plugin-react-hooks": "3.0.0",
+    "jest": "^26.0.1",
     "prettier": "2.0.2",
     "rollup": "1.32.1",
     "rollup-plugin-external-globals": "0.5.0",
     "rollup-plugin-less": "1.1.2",
     "rollup-plugin-postcss": "2.5.0",
     "shx": "0.3.2",
+    "ts-jest": "^26.0.0",
     "typescript": "3.8.3"
   },
   "files": [
