@@ -38,7 +38,7 @@ class RandomWaitStage(val configuration: RandomWaitConfig) : SimpleStage<RandomW
      * This sets the name of the stage
      * @return the name of the stage
      */
-    override fun getName(): String {
+    override fun getName(): String {1
         return "randomWait"
     }
 
